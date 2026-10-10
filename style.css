@@ -92,6 +92,24 @@ body {
     font-weight: 600;
 }
 
+.sidebar-footer {
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: auto;
+    background-color: #f9fafb;
+}
+
+.sidebar-footer p {
+    margin-bottom: 0.2rem;
+}
+
+.sidebar-footer strong {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
 /* Main Content Styling */
 .content-area {
     flex: 1;

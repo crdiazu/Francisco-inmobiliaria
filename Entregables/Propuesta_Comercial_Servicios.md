@@ -40,4 +40,8 @@ Nuestro modelo está estructurado en Unidades de Fomento (UF) para mantener la t
 Con solo **2 horas de tu tiempo al mes**, tendrás presencia activa y profesional en redes sociales durante los 30 días, educando a tus clientes, derribando sus miedos al invertir y posicionándote como el agente referente de tu sector. 
 
 **¿Listo para multiplicar tus leads?**
-*(Espacio para firma y contacto del proveedor del servicio)*
+---
+
+**Cristian Diaz**  
+*MarketingCloud para Empresas y personas*  
+📱 +569 4943 8288
