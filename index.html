@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Cliente | Francisco Inmobiliaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Marked.js for parsing markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h2>Portal de Avances</h2>
+                <p>Estrategia Francisco</p>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><button onclick="loadContent('Entregables/Propuesta_Comercial_Servicios.md')" class="nav-btn active">Propuesta Comercial</button></li>
+                    <li><button onclick="loadContent('Entregables/Estrategia_Redes_Sociales.md')" class="nav-btn">Estrategia Digital</button></li>
+                    <li><button onclick="loadContent('Entregables/Guia_Visual_y_Diseno.md')" class="nav-btn">Guía Visual</button></li>
+                    <li><button onclick="loadContent('Entregables/Calendario_Contenidos_Inicial.md')" class="nav-btn">Calendario</button></li>
+                    <li><button onclick="loadContent('Entregables/Guiones_Videos_Cortos.md')" class="nav-btn">Guiones</button></li>
+                    <li><button onclick="loadContent('Entregables/Proceso_Produccion_Automatizada.md')" class="nav-btn">Proceso Producción</button></li>
+                    <li><button onclick="loadContent('chat-export-limpio.md')" class="nav-btn">Historial (Chat)</button></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-area">
+            <header class="top-bar">
+                <h1>Documentación del Proyecto</h1>
+                <div class="status-badge">🟢 En progreso</div>
+            </header>
+            <div class="document-container" id="markdown-content">
+                <!-- Content will be loaded here via JS -->
+                <div class="loading-state">Selecciona un documento en el menú para comenzar.</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
