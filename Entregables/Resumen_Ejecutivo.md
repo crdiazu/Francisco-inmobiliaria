@@ -33,18 +33,20 @@ graph LR
 
 ---
 
-### 💰 Inversión y Formato Comercial
+### 💰 Inversión y Formato Comercial[nn]()
 
-| Concepto | Detalle | Valor |
-| :--- | :--- | :--- |
-| **Honorarios Mensuales** | Planificación, Guiones, Edición IA y Gestión | **1 UF / mes** |
-| **Visita en Terreno** | Jornada de Grabación presencial (1 vez al mes) | **1 UF / visita** |
-| **Total Mensual** | Todo incluido para producción continua | **2 UF / mes** |
+| Concepto                       | Detalle                                         | Valor                    |
+| :----------------------------- | :---------------------------------------------- | :----------------------- |
+| **Honorarios Mensuales** | Planificación, Guiones, Edición IA y Gestión | **1 UF / mes[n]()** |
+| **Visita en Terreno**    | Jornada de Grabación presencial (1 vez al mes) | **1 UF / visita**  |
+| **Total Mensual**        | Todo incluido para producción continua         | **2 UF / mes**     |
 
 ---
 
-### 📌 Navegación del Portal
+### 📌 Navegación del Portal[n]()
+
 Selecciona cualquiera de las opciones en el **menú de la izquierda** para ver la documentación detallada:
+
 - **Propuesta Comercial:** Términos completos y condiciones del contrato.
 - **Estrategia Digital:** Pilares de contenido, formato y buyer persona.
 - **Guía Visual:** Estilo de edición, colores y tono de comunicación.

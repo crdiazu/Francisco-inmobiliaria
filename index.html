@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Cliente | Francisco Inmobiliaria</title>
-    <link rel="stylesheet" href="style.css?v=2.5">
+    <title>Informe Ejecutivo | Francisco Inmobiliaria</title>
+    <link rel="stylesheet" href="style.css?v=3.0">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Marked.js for parsing markdown -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -12,45 +12,121 @@
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 <body>
-    <div class="app-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="logo-container">
-                <h2>Portal de Avances</h2>
-                <p>Estrategia Francisco</p>
+    <!-- Top Sticky Header -->
+    <header class="executive-header">
+        <div class="header-container">
+            <div class="brand">
+                <span class="brand-badge">PROPUESTA DE SERVICIOS</span>
+                <h2>Francisco Inmobiliaria</h2>
+                <p>Estrategia & Producción de Contenido Digital</p>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><button onclick="loadContent('Entregables/Resumen_Ejecutivo.md')" class="nav-btn active">Resumen Ejecutivo</button></li>
-                    <li><button onclick="loadContent('Entregables/Propuesta_Comercial_Servicios.md')" class="nav-btn">Propuesta Comercial</button></li>
-                    <li><button onclick="loadContent('Entregables/Estrategia_Redes_Sociales.md')" class="nav-btn">Estrategia Digital</button></li>
-                    <li><button onclick="loadContent('Entregables/Guia_Visual_y_Diseno.md')" class="nav-btn">Guía Visual</button></li>
-                    <li><button onclick="loadContent('Entregables/Calendario_Contenidos_Inicial.md')" class="nav-btn">Calendario</button></li>
-                    <li><button onclick="loadContent('Entregables/Guiones_Videos_Cortos.md')" class="nav-btn">Guiones</button></li>
-                    <li><button onclick="loadContent('Entregables/Proceso_Produccion_Automatizada.md')" class="nav-btn">Proceso Producción</button></li>
-                    <li><button onclick="loadContent('Entregables/Flujo_de_Trabajo.md')" class="nav-btn">Flujo de Trabajo (Visual)</button></li>
-                    <li><button onclick="loadContent('chat-export-limpio.md')" class="nav-btn">Historial (Chat)</button></li>
-                </ul>
-            </nav>
-            <div class="sidebar-footer">
-                <p><strong>Cristian Diaz</strong></p>
-                <p>MarketingCloud para Empresas y personas</p>
-                <p>+569 4943 8288</p>
+            <div class="header-actions">
+                <div class="status-chip">🟢 Proyecto Activo</div>
+                <a href="https://wa.me/56949438288" target="_blank" class="contact-chip">💬 Contactar Asesor</a>
             </div>
-        </aside>
+        </div>
+    </header>
 
-        <!-- Main Content -->
-        <main class="content-area">
-            <header class="top-bar">
-                <h1>Documentación del Proyecto</h1>
-                <div class="status-badge">🟢 En progreso</div>
-            </header>
-            <div class="document-container" id="markdown-content">
-                <!-- Content will be loaded here via JS -->
-                <div class="loading-state">Selecciona un documento en el menú para comenzar.</div>
+    <!-- Navigation Bar -->
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <a href="#resumen" class="nav-link active">📊 Resumen</a>
+            <a href="#propuesta" class="nav-link">💼 Propuesta</a>
+            <a href="#estrategia" class="nav-link">🎯 Estrategia</a>
+            <a href="#flujo" class="nav-link">🔄 Flujo de Trabajo</a>
+            <a href="#calendario" class="nav-link">📅 Calendario</a>
+            <a href="#guiones" class="nav-link">🎬 Guiones</a>
+            <a href="#proceso" class="nav-link">⚡ Producción</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="executive-body">
+        
+        <!-- Hero Metrics Dashboard -->
+        <section class="kpi-dashboard">
+            <div class="kpi-card">
+                <div class="kpi-icon">⏱️</div>
+                <div class="kpi-data">
+                    <span class="kpi-value">4 Horas / mes</span>
+                    <span class="kpi-label">Tu dedicación máxima</span>
+                </div>
             </div>
-        </main>
-    </div>
-    <script src="script.js?v=2.5"></script>
+
+            <div class="kpi-card">
+                <div class="kpi-icon">🎥</div>
+                <div class="kpi-data">
+                    <span class="kpi-value">1 Visita Presencial</span>
+                    <span class="kpi-label">Grabación mensual en lote</span>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon">🚀</div>
+                <div class="kpi-data">
+                    <span class="kpi-value">1 Master + 12 Shorts</span>
+                    <span class="kpi-label">Producción por video</span>
+                </div>
+            </div>
+
+            <div class="kpi-card highlight">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-data">
+                    <span class="kpi-value">1 UF + 1 UF</span>
+                    <span class="kpi-label">Servicio + Visita en terreno</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Master Document Sections Container -->
+        <div class="report-wrapper">
+            
+            <section id="resumen" class="report-section">
+                <div class="section-loader" data-file="Entregables/Resumen_Ejecutivo.md">Cargando Resumen...</div>
+            </section>
+
+            <section id="propuesta" class="report-section">
+                <div class="section-loader" data-file="Entregables/Propuesta_Comercial_Servicios.md">Cargando Propuesta Comercial...</div>
+            </section>
+
+            <section id="estrategia" class="report-section">
+                <div class="section-loader" data-file="Entregables/Estrategia_Redes_Sociales.md">Cargando Estrategia...</div>
+            </section>
+
+            <section id="flujo" class="report-section">
+                <div class="section-loader" data-file="Entregables/Flujo_de_Trabajo.md">Cargando Flujo...</div>
+            </section>
+
+            <section id="calendario" class="report-section">
+                <div class="section-loader" data-file="Entregables/Calendario_Contenidos_Inicial.md">Cargando Calendario...</div>
+            </section>
+
+            <section id="guiones" class="report-section">
+                <div class="section-loader" data-file="Entregables/Guiones_Videos_Cortos.md">Cargando Guiones...</div>
+            </section>
+
+            <section id="proceso" class="report-section">
+                <div class="section-loader" data-file="Entregables/Proceso_Produccion_Automatizada.md">Cargando Proceso...</div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Executive Footer Signature -->
+    <footer class="executive-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Cristian Diaz</h3>
+                <p class="footer-role">MarketingCloud para Empresas y Personas</p>
+                <p class="footer-contact">📞 +569 4943 8288 &nbsp;|&nbsp; ✉️ Asesoría Inmobiliaria Digital</p>
+            </div>
+            <div class="footer-badge">
+                <span>Informe de Presentación al Cliente &copy; 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=3.0"></script>
 </body>
 </html>

@@ -7,20 +7,20 @@ graph TD
     %% Nodos Principales
     A[Estrategia y Guiones Mensuales] -->|Visita Presencial| B(Grabación en Terreno)
     B --> C{Levantamiento de Material}
-    
+  
     %% Ramificaciones de grabación
     C -->|Batching 2 hrs| D[Videos Hablados]
     C -->|1 hr 15 min| E[Tomas de Apoyo B-Roll]
-    
+  
     %% Procesamiento
     D --> F[Edición con IA Opus Clip / Vizard]
     E --> F
-    
+  
     %% Resultados
     F --> G(Revisión y Ajustes)
     G --> H[Publicación Instagram Reels]
     G --> I[Publicación LinkedIn]
-    
+  
     %% Estilos
     style A fill:#2b5cff,stroke:#1e45c4,color:#fff,stroke-width:2px
     style B fill:#10b981,stroke:#059669,color:#fff,stroke-width:2px
