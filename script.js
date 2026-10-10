@@ -28,6 +28,20 @@ async function loadContent(filePath) {
         // Render with fade-in effect
         container.innerHTML = `<div class="markdown-body fade-in">${htmlContent}</div>`;
         
+        // Render Mermaid charts if they exist
+        if (markdownText.includes('mermaid')) {
+            // Marked wraps it in <pre><code class="language-mermaid">
+            const mermaidBlocks = container.querySelectorAll('code.language-mermaid');
+            mermaidBlocks.forEach(block => {
+                const div = document.createElement('div');
+                div.className = 'mermaid';
+                div.style.textAlign = 'center';
+                div.textContent = block.textContent;
+                block.parentNode.replaceWith(div);
+            });
+            mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+        }
+        
     } catch (error) {
         container.innerHTML = `
             <div class="markdown-body fade-in">
