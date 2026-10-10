@@ -1,6 +1,6 @@
 // Load default content on start
 document.addEventListener('DOMContentLoaded', () => {
-    loadContent('Entregables/Propuesta_Comercial_Servicios.md');
+    loadContent('Entregables/Resumen_Ejecutivo.md');
 });
 
 async function loadContent(filePath) {
