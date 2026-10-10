@@ -1,11 +1,17 @@
 :root {
-    --primary-color: #2b5cff;
-    --primary-hover: #1e45c4;
-    --bg-color: #f3f4f6;
+    /* Impeccable Palette: Tinted grays (Navy-tinted slate) and luxury gold */
+    --primary-color: #927546;       /* Muted Luxury Gold */
+    --primary-hover: #735a33;
+    
+    --bg-color: #f7f9fa;            /* Very light slate-tinted off-white */
     --sidebar-bg: #ffffff;
-    --text-main: #1f2937;
-    --text-muted: #6b7280;
-    --border-color: #e5e7eb;
+    
+    --text-main: #1e2532;           /* Navy-tinted dark gray (avoid pure black) */
+    --text-muted: #5a6678;          /* Slate gray (avoid pure gray) */
+    --border-color: #e2e8f0;        /* Slate-tinted light border */
+    
+    --font-heading: 'Playfair Display', serif;
+    --font-ui: 'Montserrat', sans-serif;
 }
 
 * {
@@ -15,12 +21,13 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-ui);
     background-color: var(--bg-color);
     color: var(--text-main);
     display: flex;
     height: 100vh;
     overflow: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 .app-container {
@@ -31,32 +38,36 @@ body {
 
 /* Sidebar Styling */
 .sidebar {
-    width: 280px;
+    width: 300px;
     background-color: var(--sidebar-bg);
     border-right: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.03);
 }
 
 .logo-container {
-    padding: 2rem 1.5rem;
-    border-bottom: 1px solid var(--border-color);
+    padding: 2.5rem 2rem;
 }
 
 .logo-container h2 {
-    font-size: 1.25rem;
-    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-main);
     margin-bottom: 0.25rem;
+    letter-spacing: -0.5px;
 }
 
 .logo-container p {
-    font-size: 0.875rem;
-    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 .nav-menu {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1.5rem;
     overflow-y: auto;
 }
 
@@ -65,49 +76,52 @@ body {
 }
 
 .nav-menu li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .nav-btn {
     width: 100%;
     text-align: left;
-    padding: 0.75rem 1rem;
+    padding: 0.85rem 1rem;
     background: none;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 0.95rem;
-    color: var(--text-main);
-    font-family: 'Inter', sans-serif;
-    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-family: var(--font-ui);
+    font-weight: 500;
+    transition: all 0.25s ease-out;
 }
 
 .nav-btn:hover {
-    background-color: #f3f4f6;
+    color: var(--text-main);
+    background-color: var(--bg-color);
 }
 
 .nav-btn.active {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
     font-weight: 600;
 }
 
 .sidebar-footer {
-    padding: 1.5rem;
+    padding: 2rem;
     border-top: 1px solid var(--border-color);
     font-size: 0.8rem;
     color: var(--text-muted);
     margin-top: auto;
-    background-color: #f9fafb;
+    background-color: var(--sidebar-bg);
 }
 
 .sidebar-footer p {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
 }
 
 .sidebar-footer strong {
-    color: var(--primary-color);
-    font-size: 0.9rem;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 0.85rem;
 }
 
 /* Main Content Styling */
@@ -119,127 +133,165 @@ body {
 }
 
 .top-bar {
-    height: 80px;
-    background-color: white;
-    border-bottom: 1px solid var(--border-color);
+    height: 90px;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2.5rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    padding: 0 4rem;
 }
 
 .top-bar h1 {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-muted);
 }
 
 .status-badge {
-    background-color: #d1fae5;
-    color: #065f46;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.875rem;
+    color: var(--primary-color);
+    font-size: 0.8rem;
     font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.status-badge::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
 
 .document-container {
     flex: 1;
-    padding: 2.5rem;
+    padding: 0 4rem 4rem 4rem;
     overflow-y: auto;
-    background-color: var(--bg-color);
+    scroll-behavior: smooth;
 }
 
 .loading-state {
     text-align: center;
     color: var(--text-muted);
     margin-top: 4rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-style: italic;
 }
 
-/* Markdown Parsed Content Styling */
+/* Impeccable Markdown Styling (No nested cards, breathable) */
 .markdown-body {
-    background: white;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
-    max-width: 900px;
+    max-width: 750px;
     margin: 0 auto;
-    line-height: 1.7;
+    line-height: 1.8;
+    color: var(--text-main);
+    font-size: 1.05rem;
 }
 
 .markdown-body h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-    color: #111827;
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--text-main);
+    line-height: 1.2;
+    letter-spacing: -1px;
 }
 
 .markdown-body h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #374151;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
 }
 
 .markdown-body h3 {
-    font-size: 1.25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
 }
 
 .markdown-body p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .markdown-body ul, .markdown-body ol {
-    margin-bottom: 1.25rem;
-    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .markdown-body li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .markdown-body strong {
-    color: #111827;
+    font-weight: 600;
 }
 
 .markdown-body table {
     width: 100%;
     border-collapse: collapse;
-    margin: 2rem 0;
+    margin: 3rem 0;
+    font-size: 0.95rem;
 }
 
 .markdown-body th, .markdown-body td {
-    padding: 1rem;
-    border: 1px solid var(--border-color);
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid var(--border-color);
     text-align: left;
 }
 
 .markdown-body th {
-    background-color: #f9fafb;
     font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+}
+
+.markdown-body hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 3rem 0;
 }
 
 .markdown-body blockquote {
-    border-left: 4px solid var(--primary-color);
-    padding-left: 1rem;
+    border-left: 2px solid var(--primary-color);
+    padding-left: 1.5rem;
     color: var(--text-muted);
     font-style: italic;
-    background: #f8faff;
-    padding: 1rem;
-    border-radius: 0 8px 8px 0;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+}
+
+.markdown-body a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease-out;
+}
+.markdown-body a:hover {
+    border-bottom-color: var(--primary-color);
 }
 
 /* Smooth fade in animation */
 .fade-in {
-    animation: fadeIn 0.3s ease-in;
+    animation: fadeIn 0.4s ease-out;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
