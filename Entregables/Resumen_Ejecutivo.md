@@ -1,44 +1,51 @@
-# 🚀 Resumen Ejecutivo
+# 🚀 Resumen del Proyecto: Francisco Inmobiliaria
 
-**Francisco Inmobiliaria - Estrategia Digital**
-
-Bienvenido a tu portal de contenidos. Aquí encontrarás todo lo necesario para transformar tu conocimiento inmobiliario en un motor de ventas digital.
-
-### 🎯 Objetivo Principal
-Posicionarte como el **agente referente y de confianza** en Constructora Fundamenta, educando a tus clientes para derribar sus miedos (créditos, compra en blanco) y captando *leads* altamente calificados.
+> **Propósito:** Transformar tu experiencia inmobiliaria en Constructora Fundamenta en un canal digital que atraiga clientes y derribe objeciones.
 
 ---
 
-### 📊 Tu Ecosistema de Producción (El Gráfico)
+### 💡 ¿En qué consiste el servicio?
 
-Este es el modelo de trabajo que ejecutaremos cada mes para lograr visibilidad total con el mínimo de tu tiempo (solo 4 horas al mes):
+* 🎥 **1 sola visita presencial al mes** (Grabación de 4 horas en terreno).
+* 🎬 **Generación de 1 Video Master (1 hora approx)** + **Reels/Shorts editados para TikTok e Instagram**.
+* 🤖 **Edición & Automatización:** Subtítulos, cortes dinámicos y adaptación de formato rápida.
+* 📈 **Estrategia & Acompañamiento:** Guiones listos antes de cada visita para grabar directo sin perder tiempo.
+
+---
+
+### 📊 Flujo de Trabajo (De 1 Visita a Todo un Mes de Contenido)
 
 ```mermaid
-graph TD
-    A[Estrategia Mensual] -->|1 Mañana al mes| B(Visita en Terreno 🎥)
-    
-    B --> C{Grabación}
-    C -->|2 hrs| D[Videos Hablados]
-    C -->|1.5 hrs| E[Tomas de Apoyo]
-    
-    D --> F[🤖 IA: Edición y Subtítulos]
-    E --> F
-    
-    F --> G(Publicación 🚀)
-    
-    style A fill:#1e3a8a,stroke:#1e45c4,color:#fff
-    style B fill:#927546,stroke:#735a33,color:#fff
-    style F fill:#3b82f6,stroke:#2563eb,color:#fff
-    style G fill:#10b981,stroke:#059669,color:#fff
+graph LR
+    A[📅 1 Visita al Mes] --> B[🎥 Grabación 4 hrs]
+    B --> C[🎬 Video Master 1 hr]
+    C --> D[🤖 Edición IA & Cortes]
+    D --> E[📱 8 a 12 Reels / Shorts]
+    E --> F[🚀 Publicación & Leads]
+
+    style A fill:#0f172a,stroke:#334155,color:#fff
+    style B fill:#2563eb,stroke:#1d4ed8,color:#fff
+    style C fill:#0d9488,stroke:#0f766e,color:#fff
+    style D fill:#7c3aed,stroke:#6d28d9,color:#fff
+    style E fill:#db2777,stroke:#be185d,color:#fff
+    style F fill:#16a34a,stroke:#15803d,color:#fff
 ```
 
-### ⏱️ Tu Compromiso de Tiempo
-- **1 sola visita presencial al mes (4 horas).**
-- Nosotros nos encargamos del resto: Guiones, Edición (con IA) y Estrategia.
+---
 
-### 📂 ¿Qué hay en este portal?
-Usa el menú lateral para navegar por tus documentos:
-1. **Propuesta Comercial:** Los detalles del servicio y tarifas.
-2. **Estrategia Digital:** Los pilares de qué y cómo publicaremos.
-3. **Guía Visual:** Los colores y el tono de tu marca personal.
-4. **Calendario y Guiones:** Lo que debes decir frente a la cámara.
+### 💰 Inversión y Formato Comercial
+
+| Concepto | Detalle | Valor |
+| :--- | :--- | :--- |
+| **Honorarios Mensuales** | Planificación, Guiones, Edición IA y Gestión | **1 UF / mes** |
+| **Visita en Terreno** | Jornada de Grabación presencial (1 vez al mes) | **1 UF / visita** |
+| **Total Mensual** | Todo incluido para producción continua | **2 UF / mes** |
+
+---
+
+### 📌 Navegación del Portal
+Selecciona cualquiera de las opciones en el **menú de la izquierda** para ver la documentación detallada:
+- **Propuesta Comercial:** Términos completos y condiciones del contrato.
+- **Estrategia Digital:** Pilares de contenido, formato y buyer persona.
+- **Guía Visual:** Estilo de edición, colores y tono de comunicación.
+- **Calendario:** Plan de contenidos y guiones preparados.
